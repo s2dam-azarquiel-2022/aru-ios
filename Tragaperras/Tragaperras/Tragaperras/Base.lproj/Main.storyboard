@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tragaperras" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tragaperras.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vGH-sf-bK1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="808"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fresa.png" translatesAutoresizingMaskIntoConstraints="NO" id="sGW-Gv-x2B">
+                                <rect key="frame" x="69" y="319" width="71" height="169"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="D7I-lb-XKw"/>
+                                    <constraint firstAttribute="height" constant="169" id="jGT-LU-RLs"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="limon.png" translatesAutoresizingMaskIntoConstraints="NO" id="qXt-aO-e7E">
+                                <rect key="frame" x="165" y="319" width="71" height="169"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="QRN-ZU-eFS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="siete.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Cf-3k-9gs">
+                                <rect key="frame" x="266" y="319" width="71" height="169"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPG-RT-sb1">
+                                <rect key="frame" x="0.0" y="707" width="414" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="s37-j3-cB0"/>
+                                </constraints>
+                                <state key="normal" image="boton.png"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qCA-wx-XRq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sGW-Gv-x2B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="275" id="6kE-yb-ZK5"/>
+                            <constraint firstItem="vGH-sf-bK1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AEB-sF-rAM"/>
+                            <constraint firstItem="sGW-Gv-x2B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="Brf-K8-5mJ"/>
+                            <constraint firstItem="vGH-sf-bK1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CdB-Ad-AF9"/>
+                            <constraint firstItem="7Cf-3k-9gs" firstAttribute="leading" secondItem="qXt-aO-e7E" secondAttribute="trailing" constant="30" id="IpZ-w7-Rco"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kPG-RT-sb1" secondAttribute="bottom" constant="22" id="RPd-T3-Fbv"/>
+                            <constraint firstItem="qXt-aO-e7E" firstAttribute="leading" secondItem="sGW-Gv-x2B" secondAttribute="trailing" constant="25" id="Rcc-LO-NZt"/>
+                            <constraint firstItem="qXt-aO-e7E" firstAttribute="top" secondItem="7Cf-3k-9gs" secondAttribute="top" id="UsT-Hb-YGM"/>
+                            <constraint firstItem="sGW-Gv-x2B" firstAttribute="top" secondItem="qXt-aO-e7E" secondAttribute="top" id="WAc-RP-1br"/>
+                            <constraint firstItem="qXt-aO-e7E" firstAttribute="bottom" secondItem="7Cf-3k-9gs" secondAttribute="bottom" id="ao1-lL-je2"/>
+                            <constraint firstItem="vGH-sf-bK1" firstAttribute="leading" secondItem="kPG-RT-sb1" secondAttribute="leading" id="g3I-CB-qMM"/>
+                            <constraint firstItem="vGH-sf-bK1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lIL-aB-1Eq"/>
+                            <constraint firstItem="vGH-sf-bK1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rgJ-uF-n4l"/>
+                            <constraint firstItem="vGH-sf-bK1" firstAttribute="trailing" secondItem="kPG-RT-sb1" secondAttribute="trailing" id="s6e-Gl-gUZ"/>
+                            <constraint firstItem="sGW-Gv-x2B" firstAttribute="bottom" secondItem="qXt-aO-e7E" secondAttribute="bottom" id="sen-MC-TkD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Cf-3k-9gs" secondAttribute="trailing" constant="77" id="tGX-Hz-ooS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="img1" destination="sGW-Gv-x2B" id="zTp-5M-wiX"/>
+                        <outlet property="img2" destination="qXt-aO-e7E" id="NFf-tm-0sf"/>
+                        <outlet property="img3" destination="7Cf-3k-9gs" id="gRa-KB-jbv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="boton.png" width="86.197181701660156" height="64.901405334472656"/>
+        <image name="fresa.png" width="101.408447265625" height="101.408447265625"/>
+        <image name="limon.png" width="101.408447265625" height="101.408447265625"/>
+        <image name="siete.png" width="101.408447265625" height="101.408447265625"/>
+        <image name="tragaperras.jpg" width="195" height="195"/>
+    </resources>
+</document>
