@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84D02D4C29829954009CA9D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D02D4B29829954009CA9D8 /* AppDelegate.swift */; };
+		84D02D4E29829954009CA9D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D02D4D29829954009CA9D8 /* SceneDelegate.swift */; };
+		84D02D5329829954009CA9D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D02D5129829954009CA9D8 /* Main.storyboard */; };
+		84D02D5529829955009CA9D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D02D5429829955009CA9D8 /* Assets.xcassets */; };
+		84D02D5829829955009CA9D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D02D5629829955009CA9D8 /* LaunchScreen.storyboard */; };
+		84D02D6329829956009CA9D8 /* SteamJSONTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D02D6229829956009CA9D8 /* SteamJSONTests.swift */; };
+		84D02D6E29829956009CA9D8 /* SteamJSONUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D02D6D29829956009CA9D8 /* SteamJSONUITests.swift */; };
+		84D02D7C29829C2A009CA9D8 /* Steam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D02D7B29829C2A009CA9D8 /* Steam.swift */; };
+		84D02D7E29829C45009CA9D8 /* MainRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D02D7D29829C45009CA9D8 /* MainRow.swift */; };
+		84D02D8029829C7C009CA9D8 /* MainRowDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D02D7F29829C7C009CA9D8 /* MainRowDetail.swift */; };
+		84D02D832982A05B009CA9D8 /* MainJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D02D822982A05B009CA9D8 /* MainJSON.swift */; };
+		84D02D882982AC53009CA9D8 /* DetailJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D02D872982AC53009CA9D8 /* DetailJSON.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84D02D5F29829956009CA9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84D02D4029829954009CA9D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84D02D4729829954009CA9D8;
+			remoteInfo = SteamJSON;
+		};
+		84D02D6A29829956009CA9D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84D02D4029829954009CA9D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84D02D4729829954009CA9D8;
+			remoteInfo = SteamJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84D02D4829829954009CA9D8 /* SteamJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SteamJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D02D4B29829954009CA9D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84D02D4D29829954009CA9D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84D02D5229829954009CA9D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84D02D5429829955009CA9D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84D02D5729829955009CA9D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84D02D5929829955009CA9D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D02D5E29829956009CA9D8 /* SteamJSONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteamJSONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D02D6229829956009CA9D8 /* SteamJSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamJSONTests.swift; sourceTree = "<group>"; };
+		84D02D6429829956009CA9D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D02D6929829956009CA9D8 /* SteamJSONUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SteamJSONUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D02D6D29829956009CA9D8 /* SteamJSONUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SteamJSONUITests.swift; sourceTree = "<group>"; };
+		84D02D6F29829956009CA9D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D02D7B29829C2A009CA9D8 /* Steam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steam.swift; sourceTree = "<group>"; };
+		84D02D7D29829C45009CA9D8 /* MainRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRow.swift; sourceTree = "<group>"; };
+		84D02D7F29829C7C009CA9D8 /* MainRowDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRowDetail.swift; sourceTree = "<group>"; };
+		84D02D822982A05B009CA9D8 /* MainJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainJSON.swift; sourceTree = "<group>"; };
+		84D02D872982AC53009CA9D8 /* DetailJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailJSON.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84D02D4529829954009CA9D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D02D5B29829956009CA9D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D02D6629829956009CA9D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84D02D3F29829954009CA9D8 = {
+			isa = PBXGroup;
+			children = (
+				84D02D4A29829954009CA9D8 /* SteamJSON */,
+				84D02D6129829956009CA9D8 /* SteamJSONTests */,
+				84D02D6C29829956009CA9D8 /* SteamJSONUITests */,
+				84D02D4929829954009CA9D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84D02D4929829954009CA9D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84D02D4829829954009CA9D8 /* SteamJSON.app */,
+				84D02D5E29829956009CA9D8 /* SteamJSONTests.xctest */,
+				84D02D6929829956009CA9D8 /* SteamJSONUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84D02D4A29829954009CA9D8 /* SteamJSON */ = {
+			isa = PBXGroup;
+			children = (
+				84D02D812982A036009CA9D8 /* model */,
+				84D02D4B29829954009CA9D8 /* AppDelegate.swift */,
+				84D02D4D29829954009CA9D8 /* SceneDelegate.swift */,
+				84D02D5129829954009CA9D8 /* Main.storyboard */,
+				84D02D5429829955009CA9D8 /* Assets.xcassets */,
+				84D02D5629829955009CA9D8 /* LaunchScreen.storyboard */,
+				84D02D5929829955009CA9D8 /* Info.plist */,
+				84D02D7B29829C2A009CA9D8 /* Steam.swift */,
+				84D02D7D29829C45009CA9D8 /* MainRow.swift */,
+				84D02D7F29829C7C009CA9D8 /* MainRowDetail.swift */,
+			);
+			path = SteamJSON;
+			sourceTree = "<group>";
+		};
+		84D02D6129829956009CA9D8 /* SteamJSONTests */ = {
+			isa = PBXGroup;
+			children = (
+				84D02D6229829956009CA9D8 /* SteamJSONTests.swift */,
+				84D02D6429829956009CA9D8 /* Info.plist */,
+			);
+			path = SteamJSONTests;
+			sourceTree = "<group>";
+		};
+		84D02D6C29829956009CA9D8 /* SteamJSONUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84D02D6D29829956009CA9D8 /* SteamJSONUITests.swift */,
+				84D02D6F29829956009CA9D8 /* Info.plist */,
+			);
+			path = SteamJSONUITests;
+			sourceTree = "<group>";
+		};
+		84D02D812982A036009CA9D8 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				84D02D822982A05B009CA9D8 /* MainJSON.swift */,
+				84D02D872982AC53009CA9D8 /* DetailJSON.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84D02D4729829954009CA9D8 /* SteamJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D02D7229829956009CA9D8 /* Build configuration list for PBXNativeTarget "SteamJSON" */;
+			buildPhases = (
+				84D02D4429829954009CA9D8 /* Sources */,
+				84D02D4529829954009CA9D8 /* Frameworks */,
+				84D02D4629829954009CA9D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SteamJSON;
+			productName = SteamJSON;
+			productReference = 84D02D4829829954009CA9D8 /* SteamJSON.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84D02D5D29829956009CA9D8 /* SteamJSONTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D02D7529829956009CA9D8 /* Build configuration list for PBXNativeTarget "SteamJSONTests" */;
+			buildPhases = (
+				84D02D5A29829956009CA9D8 /* Sources */,
+				84D02D5B29829956009CA9D8 /* Frameworks */,
+				84D02D5C29829956009CA9D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84D02D6029829956009CA9D8 /* PBXTargetDependency */,
+			);
+			name = SteamJSONTests;
+			productName = SteamJSONTests;
+			productReference = 84D02D5E29829956009CA9D8 /* SteamJSONTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84D02D6829829956009CA9D8 /* SteamJSONUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D02D7829829956009CA9D8 /* Build configuration list for PBXNativeTarget "SteamJSONUITests" */;
+			buildPhases = (
+				84D02D6529829956009CA9D8 /* Sources */,
+				84D02D6629829956009CA9D8 /* Frameworks */,
+				84D02D6729829956009CA9D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84D02D6B29829956009CA9D8 /* PBXTargetDependency */,
+			);
+			name = SteamJSONUITests;
+			productName = SteamJSONUITests;
+			productReference = 84D02D6929829956009CA9D8 /* SteamJSONUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84D02D4029829954009CA9D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = Azarquiel;
+				TargetAttributes = {
+					84D02D4729829954009CA9D8 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					84D02D5D29829956009CA9D8 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 84D02D4729829954009CA9D8;
+					};
+					84D02D6829829956009CA9D8 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 84D02D4729829954009CA9D8;
+					};
+				};
+			};
+			buildConfigurationList = 84D02D4329829954009CA9D8 /* Build configuration list for PBXProject "SteamJSON" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84D02D3F29829954009CA9D8;
+			productRefGroup = 84D02D4929829954009CA9D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84D02D4729829954009CA9D8 /* SteamJSON */,
+				84D02D5D29829956009CA9D8 /* SteamJSONTests */,
+				84D02D6829829956009CA9D8 /* SteamJSONUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84D02D4629829954009CA9D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D02D5829829955009CA9D8 /* LaunchScreen.storyboard in Resources */,
+				84D02D5529829955009CA9D8 /* Assets.xcassets in Resources */,
+				84D02D5329829954009CA9D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D02D5C29829956009CA9D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D02D6729829956009CA9D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84D02D4429829954009CA9D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D02D832982A05B009CA9D8 /* MainJSON.swift in Sources */,
+				84D02D4C29829954009CA9D8 /* AppDelegate.swift in Sources */,
+				84D02D7E29829C45009CA9D8 /* MainRow.swift in Sources */,
+				84D02D4E29829954009CA9D8 /* SceneDelegate.swift in Sources */,
+				84D02D7C29829C2A009CA9D8 /* Steam.swift in Sources */,
+				84D02D8029829C7C009CA9D8 /* MainRowDetail.swift in Sources */,
+				84D02D882982AC53009CA9D8 /* DetailJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D02D5A29829956009CA9D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D02D6329829956009CA9D8 /* SteamJSONTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D02D6529829956009CA9D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D02D6E29829956009CA9D8 /* SteamJSONUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84D02D6029829956009CA9D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84D02D4729829954009CA9D8 /* SteamJSON */;
+			targetProxy = 84D02D5F29829956009CA9D8 /* PBXContainerItemProxy */;
+		};
+		84D02D6B29829956009CA9D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84D02D4729829954009CA9D8 /* SteamJSON */;
+			targetProxy = 84D02D6A29829956009CA9D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84D02D5129829954009CA9D8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D02D5229829954009CA9D8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84D02D5629829955009CA9D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84D02D5729829955009CA9D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84D02D7029829956009CA9D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84D02D7129829956009CA9D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84D02D7329829956009CA9D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HAX65K58B;
+				INFOPLIST_FILE = SteamJSON/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.azarquiel.SteamJSON;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84D02D7429829956009CA9D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HAX65K58B;
+				INFOPLIST_FILE = SteamJSON/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.azarquiel.SteamJSON;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84D02D7629829956009CA9D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HAX65K58B;
+				INFOPLIST_FILE = SteamJSONTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.azarquiel.SteamJSONTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SteamJSON.app/SteamJSON";
+			};
+			name = Debug;
+		};
+		84D02D7729829956009CA9D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HAX65K58B;
+				INFOPLIST_FILE = SteamJSONTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.azarquiel.SteamJSONTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SteamJSON.app/SteamJSON";
+			};
+			name = Release;
+		};
+		84D02D7929829956009CA9D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HAX65K58B;
+				INFOPLIST_FILE = SteamJSONUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.azarquiel.SteamJSONUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SteamJSON;
+			};
+			name = Debug;
+		};
+		84D02D7A29829956009CA9D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8HAX65K58B;
+				INFOPLIST_FILE = SteamJSONUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.azarquiel.SteamJSONUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SteamJSON;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84D02D4329829954009CA9D8 /* Build configuration list for PBXProject "SteamJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D02D7029829956009CA9D8 /* Debug */,
+				84D02D7129829956009CA9D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D02D7229829956009CA9D8 /* Build configuration list for PBXNativeTarget "SteamJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D02D7329829956009CA9D8 /* Debug */,
+				84D02D7429829956009CA9D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D02D7529829956009CA9D8 /* Build configuration list for PBXNativeTarget "SteamJSONTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D02D7629829956009CA9D8 /* Debug */,
+				84D02D7729829956009CA9D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D02D7829829956009CA9D8 /* Build configuration list for PBXNativeTarget "SteamJSONUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D02D7929829956009CA9D8 /* Debug */,
+				84D02D7A29829956009CA9D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84D02D4029829954009CA9D8 /* Project object */;
+}
