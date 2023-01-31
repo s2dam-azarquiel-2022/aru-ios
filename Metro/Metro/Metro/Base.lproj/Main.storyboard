@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dKm-yS-Jow">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lineas - Metro Madrid - Vuela-->
+        <scene sceneID="war-sx-viD">
+            <objects>
+                <tableViewController id="Wru-xP-QbS" customClass="Lines" customModule="Metro" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7ts-7k-Uft">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="lineRowID" rowHeight="87" id="QWl-jZ-udX" customClass="LineRow" customModule="Metro" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="87"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QWl-jZ-udX" id="Zi6-DK-eC2">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Linea 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywL-pE-iMb">
+                                            <rect key="frame" x="93" y="11" width="301" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icono_linea_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="gMG-K2-NyL">
+                                            <rect key="frame" x="20" y="11" width="65" height="65"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="65" id="Rl7-Sf-u0N"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pinar de chamartin - Valdecarros" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQj-fa-b0K">
+                                            <rect key="frame" x="93" y="55" width="301" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="gMG-K2-NyL" firstAttribute="leading" secondItem="Zi6-DK-eC2" secondAttribute="leadingMargin" id="0Xx-cE-eXV"/>
+                                        <constraint firstItem="gMG-K2-NyL" firstAttribute="top" secondItem="Zi6-DK-eC2" secondAttribute="topMargin" id="9B3-WM-6ga"/>
+                                        <constraint firstItem="ywL-pE-iMb" firstAttribute="trailing" secondItem="jQj-fa-b0K" secondAttribute="trailing" id="9s7-SP-Q7f"/>
+                                        <constraint firstItem="ywL-pE-iMb" firstAttribute="leading" secondItem="gMG-K2-NyL" secondAttribute="trailing" constant="8" id="Jwy-cD-MJj"/>
+                                        <constraint firstItem="ywL-pE-iMb" firstAttribute="trailing" secondItem="Zi6-DK-eC2" secondAttribute="trailingMargin" id="OWU-2F-K9T"/>
+                                        <constraint firstItem="gMG-K2-NyL" firstAttribute="top" secondItem="ywL-pE-iMb" secondAttribute="top" id="dTl-1S-R8Z"/>
+                                        <constraint firstItem="gMG-K2-NyL" firstAttribute="bottom" secondItem="Zi6-DK-eC2" secondAttribute="bottomMargin" id="pZL-8u-0GY"/>
+                                        <constraint firstItem="gMG-K2-NyL" firstAttribute="bottom" secondItem="jQj-fa-b0K" secondAttribute="bottom" id="u67-TM-zqF"/>
+                                        <constraint firstItem="ywL-pE-iMb" firstAttribute="leading" secondItem="jQj-fa-b0K" secondAttribute="leading" id="ybw-kW-lOc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="img" destination="gMG-K2-NyL" id="cOs-AR-BfL"/>
+                                    <outlet property="name" destination="ywL-pE-iMb" id="sJh-Sa-t6j"/>
+                                    <outlet property="startEnd" destination="jQj-fa-b0K" id="efi-9R-L6z"/>
+                                    <segue destination="Mzb-ph-zQb" kind="show" identifier="showStations" id="PK3-Sl-ESx"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Wru-xP-QbS" id="fVw-2X-n5z"/>
+                            <outlet property="delegate" destination="Wru-xP-QbS" id="1wa-pQ-V0j"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Lineas - Metro Madrid - Vuela" id="66B-XH-Qqx"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QB0-Yl-Ugu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="-84.375"/>
+        </scene>
+        <!--Stations-->
+        <scene sceneID="yWM-fj-tvi">
+            <objects>
+                <tableViewController id="Mzb-ph-zQb" customClass="Stations" customModule="Metro" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="nhk-mW-XXc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="stationRowID" id="1p2-0i-bxp" customClass="StationRow" customModule="Metro" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1p2-0i-bxp" id="mKH-r3-MTE">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Mzb-ph-zQb" id="bKU-Yk-4dX"/>
+                            <outlet property="delegate" destination="Mzb-ph-zQb" id="AsC-Mp-YPj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="fVa-aV-BYN"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KeL-Tc-aEq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797" y="-84"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QuO-Wf-hUw">
+            <objects>
+                <navigationController id="dKm-yS-Jow" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0vV-qi-zqA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Wru-xP-QbS" kind="relationship" relationship="rootViewController" id="m8g-on-5uA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Zm-Zj-4oi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-741" y="-84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icono_linea_1.png" width="45" height="45"/>
+    </resources>
+</document>
